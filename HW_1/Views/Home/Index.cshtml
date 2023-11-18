@@ -1,0 +1,22 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+@model HW_1.Models.MainPageData;
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Day of year</th>
+                <th>Random letter</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>@Model.day</td>
+                <td>@Model.letter</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

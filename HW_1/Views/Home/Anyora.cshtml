@@ -1,0 +1,55 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+
+@{
+    ViewData["Name"] = "Винный погребок «Anyora»";
+    ViewData["ImageSrc"] = "/img/Bodega-anyora-valensiya.jpg";
+    ViewData["Titel"] = "В этом ресторане, расположенном в самом сердце приморского района Валенсии Кабаньяль (El Cabanyal), вы найдёте лучшие блюда и тапас из морепродуктов в городе под сопровождение вина собственного производства.";
+    ViewData["Address"] = "Calle d’en Vicent Gallart, 15";
+    ViewData["Phone"] = "(+34) 963 558 809";
+    ViewData["hrefWeb"] = "http://anyora.es/";
+    ViewData["NameWeb"] = "www.anyora.es";
+
+}
+
+
+<div class="container">
+    <div class="row justify-content-md-center">
+        <div class="col col-lg-2">
+        </div>
+        <div class="col-8">
+            <h1 class="display-4 text-center">@ViewData["Name"]</h1>
+            <p><img class="rounded img-fluid d-block" src=@ViewData["ImageSrc"] alt="50 лучших ресторанов и баров Валенсии"></p>
+            <p>@ViewData["Titel"]</p>
+            <div class="card">
+                <div class="card-header">
+                    <h3>Полезная информация</h3>
+                </div>
+                <div class="card-body">
+                    <div class="row nopadding">
+                        <div class="col-lg-6">
+                            <dl class="separator">
+                                <dt>Адрес:</dt>
+                                <dd>@ViewData["Address"]</dd>
+                                <dt>Телефон:</dt>
+                                <dd>@ViewData["Phone"]</dd>
+                            </dl>
+                        </div>
+                        <div class="col-lg-6">
+                            <dl class="separator">
+                                <dt>Сайт:</dt>
+                                <dd>
+                                    <a href="@ViewData["hrefWeb"]" target="_blank">@ViewData["NameWeb"]</a>
+                                </dd>
+
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="col col-lg-2"></div>
+    </div>
+</div>
